@@ -18,4 +18,13 @@
   url         = {https://www.theseus.fi/bitstream/handle/10024/112872/Jin_Lee.pdf?sequence=1},
 }
 
+@Thesis{,
+  author      = {Raili Vunk},
+  title       = {Growth hacking in Estonian start-ups},
+  type        = {mathesis},
+  institution = {Estonian Business School},
+  year        = {2017},
+  url         = {https://mi.ee/sites/default/files/blogid/raili_vunk.pdf},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
