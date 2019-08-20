@@ -18,7 +18,7 @@ Het stappenplan voor deze specifieke implementatie is als volgt:
 	\item Huidige situatie bekijken
 	\item Google Analytics opzetten
 	\item Referral Candy toevoegen aan de Shopify website
-	\item A/B test opzetten op layout van referral formulier
+	\item Aanpassingen aan de webshop
 	\item Growth hack online zetten
 	\item Monitoring gedurende één maand
 	\item Data analyseren: A/B test, verkoopcijfers, aantal bezoekers, enz.
@@ -50,15 +50,44 @@ Hieronder staat een overzicht van de gebruikte technologieën en platformen.
 Dit is een goede basis waaraan Google Analytics binnen \emph{Data en analytics} wordt toegevoegd en aan de webshop wordt de module voor het referral systeem toegevoegd.
 
 \subsection{Google Analytics opzetten} \label{sec:google-analytics-opzetten}
-Het koppelen van de Shopify website met Google Analytics is een eenvoudig proces. De Google account van Kriket werd gebruikt om een Google Analytics profiel aan te maken. De implementatie gebeurde zo:
+Het koppelen van de Shopify website met Google Analytics is een eenvoudig proces. De Google account van Kriket werd gebruikt om een Analytics profiel aan te maken. De basis-koppeling stond klaar, maar Analytics werd nog niet ten volle gebruikt. Er waren geen doelen ingesteld en zo kan men moeilijk opvolgen wat de gebruikers op de website doen. Zodra de doelen zijn ingesteld kan men specifieke acties volgen en bekijken wanneer de gebruiker stopt in het proces van betaling.
+
+De volgende doelen werden aangemaakt:
+\begin{itemize}
+	\item Added address
+	\item Added payment info
+	\item Added product to cart
+	\item Added shipping info
+	\item Checkout page
+	\item Order completed
+\end{itemize}
 
 \subsection{Referral Candy toevoegen} \label{sec:referral-candy-toevoegen}
 De Shopify applicatie Referral Candy wordt toegevoegd en geconfigureerd naar de noden van Kriket. Het volgende concept wordt toegepast:
 
-\emph{Arno} is heel tevreden van Kriket en wil het product aanraden aan zijn vriendin \emph{Bonnie}. Bonnie krijgt volgende URL van Arno opgestuurd via Facebook Messenger ``kriket.be/shop?referral=arno``. Bonnie is geïnteresseerd in het concept van Kriket en koopt via de link van Arno een doos van de discover box. Door de link van Arno te gebruiken heeft Bonnie 20\% kunnen besparen én krijgt ze gratis verzending. Arno krijgt op zijn beurt ook voordeel en ontvangt 20\% korting op zijn volgende aankoop (met hetzelfde e-mailadres of een unieke voucher code).
+\emph{Arno} is heel tevreden van Kriket en wil het product aanraden aan zijn vriendin \emph{Bonnie}. Bonnie krijgt volgende URL van Arno opgestuurd via Facebook Messenger ``https://kriket.refr.cc/arno``. Bonnie is geïnteresseerd in het concept van Kriket en koopt via de link van Arno een discover box. Door de link van Arno te gebruiken heeft Bonnie 20\% kunnen besparen. Arno krijgt op zijn beurt ook voordeel en ontvangt 20\% korting op zijn volgende aankoop via een kortingscode die hij per mail krijgt opgestuurd.
 
-\subsection{A/B test opzetten op layout van referral formulier} \label{sec:a-b-test-opzetten}
-Er worden twee designs getest aan de hand van een A/B-test. De twee mogelijkheden zijn onderaan te zien, versie A: \ref{fig:a-b-test-versie-a} en versie B: \ref{fig:a-b-test-versie-b}. De A/B-test worden uitgevoerd via Google Optimize, deze is op zijn beurt gekoppeld met Google Analytics om de test optimaal op te volgen.
+Concreet gaat het als volgt in werking. De klant maakt kennis met het referral programma via:
+\begin{itemize}
+	\item Social media post met landingspagina (\href{https://kriket.referralcandy.com}{https://kriket.referralcandy.com})
+	\item Pop-up na betaling
+	\item E-mail die na aankoop wordt verstuurd
+\end{itemize}
+Indien de link werd aangemaakt en gedurende 2 weken niet gebruikt werd, krijgt de klant een vriendelijke reminder e-mail met de boodschap om 20\% korting niet te laten vliegen.
+
+Vanuit Referral Candy is er ook een nieuwe koppeling met Analytics toegevoegd. Een nieuwe \emph{property} genaamd ``Referral Program``, een \emph{property} is een onderdeel van een Analytics account. Een property kan een website, mobiele applicatie of dergelijke zijn. In dit geval is Referral Candy onze nieuwe applicatie die we koppelen aan de account. Deze staat dus los van de andere property, ``www.kriket.be``, die de eerder vermelde doelen bevat. Ze ontvangen de data van andere bronnen, de ene van Shopify en de andere van Referral Candy.
+
+\subsection{Aanpassingen aan de webshop} \label{sec:aanpassingen-webshop}
+Er worden 2 producten toegevoegd aan de webshop. ``DISCOVERY BOX LARGE`` en ``DISCOVERY BOX SMALL``, deze worden gebruikt bij het referral-programma.
+
+
+\begin{figure}[h!]
+	\includegraphics[width=\linewidth]{img/discovery-box-webshop.png}
+	\caption{De twee nieuwe producten in de webshop.}
+	\label{fig:discovery-box-webshop}
+\end{figure}
+
+Naast deze nieuwe producten toe te voegen worden de afbeeldingen verkleind. Het kleiner maken van de afbeeldingen zorgt voor een snellere laadtijd en een fijnere surf-ervaring op de webshop. Bij sommige producten is het verschil in bestand-grootte enorm - van 800Kb naar 100Kb. Tot wel 8 keer kleiner, het is een verschil dat zeker op valt.
 
 \subsection{Growth hack online zetten} \label{sec:growth-hack-online-zetten}
 Zodra het opzetten van alle voorgaande tools getest is kan de growth hack online gezet worden. Hierbij worden de twee sociale media platformen gebruikt. Langs Instagram en Facebook komen de fans en klanten van Kriket te weten dat het referral systeem beschikbaar is. Indien ze de beloning voldoende vinden en dat deze de moeite waard is, zullen ze het wellicht gebruiken. 
@@ -79,21 +108,3 @@ A/B test, verkoopcijfers, aantal bezoekers, enz.
 
 \subsection{Conclusie: growth hack succesvol?} \label{sec:conclusie-growth-hack-succesvol}
 De conclusie.
-
-
--- klad --
-
-DONE:
-- Foto's op webshop verkleind (800Kb naar 100Kb)
-
-- 2 items toevoegen discover boxes EN
-
-- Google analytics: sales funnels door middel van nieuwe goals + referralcandy
-
-- Referral form na aankoop (pop-up?)
-
-- Referral LP voor social media 
-
-- Referral link 20\% korting op discover boxes
-
-- Reminder mail na 2 weken code gecreëerd
