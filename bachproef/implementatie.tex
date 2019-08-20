@@ -73,13 +73,47 @@ Concreet gaat het als volgt in werking. De klant maakt kennis met het referral p
 	\item Pop-up na betaling
 	\item E-mail die na aankoop wordt verstuurd
 \end{itemize}
+
+Via de pop-up en e-mail krijgt met de link meteen en deze kan dan gedeeld worden. Via de landingspagina moet men natuurlijk eerst een e-mailadres doorgeven zodat de kortingscode hier naar opgestuurd kan worden. 
+
+\begin{figure}[h!]
+	\includegraphics[width=80mm,scale=0.7]{img/referral-pop-up-1.png}
+	\centering
+	\caption{De pop-up na aankoop in de Kriket webshop.}
+	\label{fig:referral-popup-webshop-1}
+\end{figure}
+\begin{figure}[h!]
+\includegraphics[width=80mm,scale=0.7]{img/referral-pop-up-2.png}
+\centering
+\caption{De link kan rechtstreeks uit de pop-up gekopieerd worden.}
+\label{fig:referral-popup-webshop-2}
+\end{figure}
+
 Indien de link werd aangemaakt en gedurende 2 weken niet gebruikt werd, krijgt de klant een vriendelijke reminder e-mail met de boodschap om 20\% korting niet te laten vliegen.
+
+Zodra de link (bijvoorbeeld: https://kriket.refr.cc/arno) wordt bezocht, gaat deze je doorsturen naar een pagina met als link bijvoorbeeld ``https://go.referralcandy.com/share/K296FLX`` (zie figuur \ref{fig:referral-share-page}). Op deze pagina ziet met de coupon code, die 20\% korting geeft op alle \emph{Discover Boxes}. Men kan de kortingscode kopiëren door op de tekst te klikken, maar deze wordt ook automatisch toegepast door op de CTA (Call To Action) - ``Bekijk de webshop`` te drukken. Via een aangepaste URL wordt de kortingscode bij het betaalproces automatisch ingevuld. Wanneer deze code gebruikt wordt zal de eigenaar van deze link (in dit voorbeeld - Arno), een link toegestuurd krijgen met een kortingscode voor hemzelf. Met deze code krijgt hij 20\% korting op alle items in de webshop.
+
+\begin{figure}[h!]
+	\includegraphics[width=80mm,scale=0.7]{img/referral-share-page.png}
+	\centering
+	\caption{Deze pagina krijgt de vriend(in) of kennis te zien wanneer de link (bijvoorbeeld \emph{https://kriket.refr.cc/arno}) wordt bezocht.}
+	\label{fig:referral-share-page}
+\end{figure}
+
+Indien de gebruiker al zijn kortingscodes wil bekijken, kan deze dat doen via de link waar hij/zij de link heeft gecreëerd en gekopieerd. Bijvoorbeeld - \emph{https://kriket.referralcandy.com/MWGS976}, wanneer men daar op ``Jouw kortingscodes`` drukt gaat men naar een log-in pagina waar men vervolgens een wachtwoord kan creëren. Hierna kan men de pagina met kortingscodes bekijken - \emph{https://kriket.referralcandy.com/MWGS976/rewards} (zie figuur \ref{fig:referral-account.png}). Men kan hier ook zijn of haar persoonlijke link aanpassen (bijvoorbeeld \emph{https://kriket.refr.cc/evertv})
+
+\begin{figure}[h!]
+	\includegraphics[width=\linewidth]{img/referral-account.png}
+	\caption{Het overzicht van de kortingscodes van een gebruiker.}
+	\label{fig:referral-account.png}
+\end{figure}
 
 Vanuit Referral Candy is er ook een nieuwe koppeling met Analytics toegevoegd. Een nieuwe \emph{property} genaamd ``Referral Program``, een \emph{property} is een onderdeel van een Analytics account. Een property kan een website, mobiele applicatie of dergelijke zijn. In dit geval is Referral Candy onze nieuwe applicatie die we koppelen aan de account. Deze staat dus los van de andere property, ``www.kriket.be``, die de eerder vermelde doelen bevat. Ze ontvangen de data van andere bronnen, de ene van Shopify en de andere van Referral Candy.
 
+Tot slot was een groot deel van het opzetten goede tekst bedenken, copywriting is een vak apart - het marketing gedeelte is daar niet weg te denken. De teksten voor de pop-up, e-mails, landingspagina, overzicht pagina, ... enzovoort waren een belangrijk en tijdrovend onderdeel van het opzetten van Referral Candy. 
+
 \subsection{Aanpassingen aan de webshop} \label{sec:aanpassingen-webshop}
 Er worden 2 producten toegevoegd aan de webshop. ``DISCOVERY BOX LARGE`` en ``DISCOVERY BOX SMALL``, deze worden gebruikt bij het referral-programma.
-
 
 \begin{figure}[h!]
 	\includegraphics[width=\linewidth]{img/discovery-box-webshop.png}
@@ -90,20 +124,32 @@ Er worden 2 producten toegevoegd aan de webshop. ``DISCOVERY BOX LARGE`` en ``DI
 Naast deze nieuwe producten toe te voegen worden de afbeeldingen verkleind. Het kleiner maken van de afbeeldingen zorgt voor een snellere laadtijd en een fijnere surf-ervaring op de webshop. Bij sommige producten is het verschil in bestand-grootte enorm - van 800Kb naar 100Kb. Tot wel 8 keer kleiner, het is een verschil dat zeker op valt.
 
 \subsection{Growth hack online zetten} \label{sec:growth-hack-online-zetten}
-Zodra het opzetten van alle voorgaande tools getest is kan de growth hack online gezet worden. Hierbij worden de twee sociale media platformen gebruikt. Langs Instagram en Facebook komen de fans en klanten van Kriket te weten dat het referral systeem beschikbaar is. Indien ze de beloning voldoende vinden en dat deze de moeite waard is, zullen ze het wellicht gebruiken. 
+Zodra het opzetten van alle voorgaande tools getest is kan de growth hack online gezet worden. Hierbij worden de twee sociale media platformen gebruikt. Langs Instagram en Facebook komen de fans en klanten van Kriket te weten dat het referral systeem beschikbaar is. 
+
+Initieel wordt via Facebook een post gezet die aankondigt dat de actie van start gaat. Op het einde van de maand wordt er geëxperimenteerd met gesponsorde berichten op Instagram en Facebook. Via deze gerichte advertenties wordt de kans op nieuwe klanten vergroot.
+
+Naast deze sociale media platformen wordt de klant ook op de hoogte gebracht via een pop-up na betaling en via e-mail. Deze ontvangt de klant na het plaatsen van een bestelling, zoals eerder vermeld (zie \ref{sec:referral-candy-toevoegen}). 
 
 \subsection{Monitoring gedurende één maand} \label{sec:monitoring-gedurende-twee-weken}
-Nu dat de growth hack online staat kan Google Analytics gebruikt worden voor de monitoring van deze growth hack. Hieruit zal blijken hoe vaak het referral systeem gebruikt wordt, indien blijkt dat het niet werkt zal men de beloning moeten verhogen of bijsturen op een ander gebied.
+Nu dat de growth hack online staat kan Google Analytics en de back-end tool van Referral Candy gebruikt worden voor de monitoring van deze growth hack. 
+
+De growth hack werd gelanceerd op vrijdag 26 juli. Vanaf dat moment kregen de klanten een pop-up en e-mail na betaling in verband met het referral programma. 
+
+De Facebook-post werd geplaatst op woensdag 7 augustus en de gesponsorde berichten kwamen hier kort achter.
 
 \subsection{Data analyseren} \label{sec:data-analyseren}
 De data uit Google en Shopify Analytics zegt ons het volgende:
 
-Van 26 juli tot 20 augustus
+Van 26 juli tot 20 augustus werd volgende (interessante) data gecapteerd:
 
-*grafiek*
+\begin{itemize}
+	\item Bezoekers:
+	\item Verkoop:
+	\item Referrals:
+	\item Bezoekers via referral-link:
+\end{itemize}
 
-A/B test, verkoopcijfers, aantal bezoekers, enz.
-
+*grafiek, uit Google Analytics, Shopify of Referral Candy*
 
 
 \subsection{Conclusie: growth hack succesvol?} \label{sec:conclusie-growth-hack-succesvol}
