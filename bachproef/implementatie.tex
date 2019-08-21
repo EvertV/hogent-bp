@@ -147,7 +147,7 @@ Van 26 juli tot 20 augustus werd volgende (interessante) data gecapteerd:
 	\item Paginaweergaven: 2644	
 	\item Sessies: 852
 	\item Gem. sessieduur: 1 min 40 sec
-	\item Bezoekers: 660
+	\item Bezoekers: 660 (zie figuur \ref{fig:acquisitie-kanalen})
 		\subitem Desktop: 370
 		\subitem Mobile: 270
 		\subitem Tablet: 20
@@ -160,25 +160,26 @@ Van 26 juli tot 20 augustus werd volgende (interessante) data gecapteerd:
 \end{itemize}
 \textbf{Shopify}
 \begin{itemize}
-	\item Sessions: 102 (93 visitors)
+	\item Sessies: 102 (93 bezoekers)
 		\subitem Desktop: 59
 		\subitem Mobile: 39
 		\subitem Tablet: 4
 	\item Orders voltooid: 23
-	\item Total Sales: EUR 673,10
-	\item Added to cart: 36,27\%
-	\item Reached checkout: 30,39\%
-	\item Session converted: 19,61\%
-	\item Meest populaire item: Discovery Box Large
+	\item Totale verkoop: EUR 673,10
+	\item Conversie ratio  (zie figuur \ref{fig:conversie-ratio-trechter})
+		\subitem Product toegevoegd aan winkelmandje: 36,27\% (35 sessies)
+		\subitem Betaling bereikt: 30,39\% (31 sessies)
+		\subitem Conversies: 19,61\% (20 sessies)
+	\item Populairste item: Discovery Box Large
 \end{itemize}
 \textbf{Referral Candy}
 \begin{itemize}
-	\item E-mails sent: 48 (35 invite, 13 reminder)
+	\item E-mails verstuurd: 48 (35 invite, 13 reminder)
 	\item Link clicks: 25
+	\item Social media shares: 13 (met 25 clicks)
 	\item Webshop bezoeken: 16
 	\item Aankopen via referral: 5
-	\item Social media shares: 13 (met 25 clicks)
-	\item Bijkomende omzet: EUR 90,00 (22,73\% van de totale omzet)
+	\item Referral omzet: EUR 90,00 (zie figuur \ref{fig:directe-referral-verkoop})
 \end{itemize}
 
 \begin{figure}
@@ -188,17 +189,54 @@ Van 26 juli tot 20 augustus werd volgende (interessante) data gecapteerd:
 	\label{fig:acquisitie-kanalen}
 \end{figure}
 
-De verkoop data werd enkel uit Shopify gehaald en niet uit Google Analytics. Dit werd gedaan omdat Shopify de data direct bij de bron verkrijgt, Google Analytics kan minder accuraat zijn doordat het in deze situatie werkt met pagina bezoeken. Zo zal Google Analytics kijken naar \emph{/checkout/thank\_you} om te besluiten of er een betaling is gebeurd en Shopify krijgt deze data met 100\% zekerheid binnen omdat deze de betalingen opvolgt. In de tijdsspanne van 26 juli tot 20 augustus heeft Google Analytics 18 voltooide orders getracked en Shopify 23. Vandaar wordt voor deze data naar Shopify gebruikt.
+
+\begin{figure}
+	\includegraphics[scale=0.9]{img/directe-referral-verkoop.png}
+	\centering
+	\caption{Directe (18 orders) en referral (5 orders) verkoop in een cirkeldiagram.}
+	\label{fig:directe-referral-verkoop}
+\end{figure}
+
+\begin{figure}
+	\includegraphics[scale=0.9]{img/conversie-ratio-trechter.png}
+	\centering
+	\caption{Conversie ratio is 19,61\%, dat wil zeggen dat bijna 1 op 5 sessies eindigt in een aankoop.}
+	\label{fig:conversie-ratio-trechter}
+\end{figure}
+
+De verkoop data werd enkel uit Shopify gehaald en niet uit Google Analytics. Dit werd gedaan omdat Shopify de data direct bij de bron verkrijgt, Google Analytics kan minder accuraat zijn doordat het in deze situatie werkt met pagina bezoeken. Zo zal Google Analytics kijken naar \emph{/checkout/thank\_you} om te besluiten of er een betaling is gebeurd en Shopify krijgt deze data met 100\% zekerheid binnen omdat deze de betalingen opvolgt. In de tijdsspanne van 26 juli tot 20 augustus heeft Google Analytics 18 voltooide orders getracked en Shopify 23. Vandaar wordt voor deze data Shopify gebruikt.
 
 Het grote verschil in aantal sessies bij Google Analytics en Shopify komt doordat Google Analytics alle sessies van bots mee rekent. Dit kan uitgezet worden bij de instellingen door ``Alle hits van bekende bots en spiders uitsluiten`` aan te vinken. Tijdens deze tests werd dit niet uitgezet en daardoor is er een groot verschil. We werken om deze reden vooral met de percentages en de exacte data uit Shopify.
 
-TODO - Grafiek van: 
+\begin{figure}
+	\includegraphics[scale=0.7]{img/sessies-per-apparaat.png}
+	\centering
+	\caption{Verdeling van aantal sessies op gebruikte apparaten, een opvallend aantal mobiele gebruikers}
+	\label{fig:sessies-per-apparaat}
+\end{figure}
 
-- Sales Funnel uit Shopify (trechter)
+Deze data kunnen we vergelijken met dezelfde periode, maar voordat de growth hack in actie werd gezet. Bijvoorbeeld van 1 tot 25 juli, de vergelijking doen we best met verkoopcijfers. Enkele belangrijke cijfers vind je in de tabel hieronder.
 
-- Aantal omzet van Referral candy en totaal (taart)
 
-- 
+\begin{tabular}{ |p{4cm}||p{3cm}|p{3cm}|  }
+	\hline
+	\multicolumn{3}{|c|}{Vergelijking voor en tijdens growth hack} \\
+	\hline
+	Periode & 1 - 25 juli &26 juli - 20 aug\\
+	\hline
+	Sessies   & 66    &102\\
+	Terugkerende bezoekers   & 42,86\%    &26,09\%\\
+	Orders voltooid&   14  & 23\\
+	Conversie ratio &21,21\% & 19,61\%\\
+	Totale verkoop    &693,40 EUR & 673,10 EUR\\
+	Gem. order waarde    &49,53  EUR& 30,81 EUR\\
+	\hline
+\end{tabular}
 
 \subsection{Conclusie: growth hack succesvol?} \label{sec:conclusie-growth-hack-succesvol}
-De conclusie.
+We kunnen uit de laatste tabel hierboven afleiden dat de growth hack vooral voor meer orders heeft gezorgd. Na verder onderzoek zien we een gemiddelde van 13 à 17 orders per maand voor de afgelopen maanden. De orders van het referral programma zijn dus bijkomende orders.
+
+Verder is het aantal sessies enorm gestegen, dit mede door de advertenties via Facebook Ads. De klanten van Kriket zijn mogelijks na 1 maand nog niet genoeg vertrouwd met het referral programma, waardoor ze het nog niet willen gebruiken. Een langere periode zal er voor zorgen dat ze vertrouwd zijn met het systeem. Wanneer ze de nood aan nieuwe krekelrepen voelen, zullen ze denken aan de mogelijkheid om 20\% korting te verkrijgen via dit systeem.
+
+Was de growth hack succesvol? Op het eerste zicht is er niet gigantisch veel veranderd tijdens deze maand, maar het aantal nieuwe bezoekers en nieuwe klanten zorgt waarschijnlijk voor stabiele groei de volgende maanden. 
+
