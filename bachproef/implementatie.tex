@@ -138,19 +138,67 @@ De growth hack werd gelanceerd op vrijdag 26 juli. Vanaf dat moment kregen de kl
 De Facebook-post werd geplaatst op woensdag 7 augustus en de gesponsorde berichten kwamen hier kort achter.
 
 \subsection{Data analyseren} \label{sec:data-analyseren}
-De data uit Google en Shopify Analytics zegt ons het volgende:
+De data uit het dashboard van Referral Candy, Google en Shopify Analytics zegt ons het volgende:
 
 Van 26 juli tot 20 augustus werd volgende (interessante) data gecapteerd:
 
+\textbf{Google Analytics}
 \begin{itemize}
-	\item Bezoekers:
-	\item Verkoop:
-	\item Referrals:
-	\item Bezoekers via referral-link:
+	\item Paginaweergaven: 2644	
+	\item Sessies: 852
+	\item Gem. sessieduur: 1 min 40 sec
+	\item Bezoekers: 660
+		\subitem Desktop: 370
+		\subitem Mobile: 270
+		\subitem Tablet: 20
+	\item Taal:
+		\subitem NL: 45,17\%
+		\subitem EN: 30,36\%
+		\subitem DE: 7,25\%
+		\subitem FR: 7,25\%
+		\subitem ES: 1,81\%
+\end{itemize}
+\textbf{Shopify}
+\begin{itemize}
+	\item Sessions: 102 (93 visitors)
+		\subitem Desktop: 59
+		\subitem Mobile: 39
+		\subitem Tablet: 4
+	\item Orders voltooid: 23
+	\item Total Sales: EUR 673,10
+	\item Added to cart: 36,27\%
+	\item Reached checkout: 30,39\%
+	\item Session converted: 19,61\%
+	\item Meest populaire item: Discovery Box Large
+\end{itemize}
+\textbf{Referral Candy}
+\begin{itemize}
+	\item E-mails sent: 48 (35 invite, 13 reminder)
+	\item Link clicks: 25
+	\item Webshop bezoeken: 16
+	\item Aankopen via referral: 5
+	\item Social media shares: 13 (met 25 clicks)
+	\item Bijkomende omzet: EUR 90,00 (22,73\% van de totale omzet)
 \end{itemize}
 
-*grafiek, uit Google Analytics, Shopify of Referral Candy*
+\begin{figure}
+	\includegraphics[]{img/acquisitie-kanalen.png}
+	\centering
+	\caption{De top acquisitie kanalen tussen 26 juli en 20 augustus.}
+	\label{fig:acquisitie-kanalen}
+\end{figure}
 
+De verkoop data werd enkel uit Shopify gehaald en niet uit Google Analytics. Dit werd gedaan omdat Shopify de data direct bij de bron verkrijgt, Google Analytics kan minder accuraat zijn doordat het in deze situatie werkt met pagina bezoeken. Zo zal Google Analytics kijken naar \emph{/checkout/thank\_you} om te besluiten of er een betaling is gebeurd en Shopify krijgt deze data met 100\% zekerheid binnen omdat deze de betalingen opvolgt. In de tijdsspanne van 26 juli tot 20 augustus heeft Google Analytics 18 voltooide orders getracked en Shopify 23. Vandaar wordt voor deze data naar Shopify gebruikt.
+
+Het grote verschil in aantal sessies bij Google Analytics en Shopify komt doordat Google Analytics alle sessies van bots mee rekent. Dit kan uitgezet worden bij de instellingen door ``Alle hits van bekende bots en spiders uitsluiten`` aan te vinken. Tijdens deze tests werd dit niet uitgezet en daardoor is er een groot verschil. We werken om deze reden vooral met de percentages en de exacte data uit Shopify.
+
+TODO - Grafiek van: 
+
+- Sales Funnel uit Shopify (trechter)
+
+- Aantal omzet van Referral candy en totaal (taart)
+
+- 
 
 \subsection{Conclusie: growth hack succesvol?} \label{sec:conclusie-growth-hack-succesvol}
 De conclusie.
