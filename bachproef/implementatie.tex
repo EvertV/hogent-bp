@@ -77,27 +77,33 @@ De Shopify applicatie Referral Candy wordt toegevoegd en geconfigureerd naar de 
 
 De klant maakt kennis met het referral programma via:
 \begin{itemize}
+	\item E-mail van Kriket naar klanten om de actie aan te kondigen
 	\item Post op sociale media met link naar de landingspagina (\href{https://kriket.referralcandy.com}{https://kriket.referralcandy.com})
-	\item Pop-up na betaling op de webshop
+	\item Pop-up na aankoop in de webshop
 	\item E-mail die na aankoop wordt verstuurd
 \end{itemize}
 
-Via de pop-up en e-mail krijgt men de link meteen en deze kan dan gedeeld worden. Via de landingspagina moet men natuurlijk eerst een e-mailadres doorgeven zodat de link op basis hiervan aangemaakt kan worden. Het e-mailadres wordt dan gekoppeld met de link en indien een vriend(in) een aankoop doet via deze link wordt de kortingscode hier naar opgestuurd. 
+Via de pop-up (zie figuur \ref{fig:referral-popup-webshop}) en e-mail krijgt men de link meteen en deze kan dan gedeeld worden. Via de landingspagina moet men natuurlijk eerst een e-mailadres doorgeven zodat de link op basis hiervan aangemaakt kan worden. Het e-mailadres wordt dan gekoppeld met de link en indien een vriend(in) een aankoop doet via deze link wordt de kortingscode hier naar opgestuurd. 
 
-\begin{figure}[h!]
-	\includegraphics[width=80mm,scale=0.7]{img/referral-pop-up-1.png}
+Indien de link werd aangemaakt en gedurende 2 weken niet gebruikt werd, krijgt de klant een vriendelijke herinneringsmail met de boodschap om 20\% korting niet te laten vliegen.
+
+\begin{figure}
 	\centering
-	\caption{De pop-up na aankoop in de Kriket webshop.}
-	\label{fig:referral-popup-webshop-1}
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=.8\linewidth]{img/referral-pop-up-1.png}
+		\caption{Initiële pop-up}
+		\label{fig:referral-popup-webshop-1}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=.9\linewidth]{img/referral-pop-up-2.png}
+		\caption{Na klik op de knop}
+		\label{fig:referral-popup-webshop-2}
+	\end{subfigure}
+	\caption{Pop-up na aankoop in de Kriket webshop, hieruit kan de link rechtstreeks gekopieerd en gedeeld worden.}
+	\label{fig:referral-popup-webshop}
 \end{figure}
-\begin{figure}[h!]
-\includegraphics[width=80mm,scale=0.7]{img/referral-pop-up-2.png}
-\centering
-\caption{De link kan rechtstreeks uit de pop-up gekopieerd worden.}
-\label{fig:referral-popup-webshop-2}
-\end{figure}
-
-Indien de link werd aangemaakt en gedurende 2 weken niet gebruikt werd, krijgt de klant een vriendelijke reminder e-mail met de boodschap om 20\% korting niet te laten vliegen.
 
 Zodra de link, \emph{https://kriket.refr.cc/arno}, wordt bezocht, gaat deze je automatisch doorsturen naar een pagina met bijvoorbeeld volgende URL \emph{https://go.referralcandy.com/share/K296FLX} (zie figuur \ref{fig:referral-share-page}). 
 
@@ -113,7 +119,8 @@ Op deze pagina ziet men de kortingscode (ook ``coupon`` genoemd), die 20\% korti
 Indien de gebruiker al zijn kortingscodes wil bekijken, kan deze dat doen via de pagina waar hij/zij de link heeft gecreëerd en gekopieerd. Bijvoorbeeld - \emph{https://kriket.referralcandy.com/MWGS976}, wanneer men daar op ``Jouw kortingscodes`` drukt gaat men naar een log-in pagina waar men vervolgens een wachtwoord kan creëren. Hierna kan men de pagina met kortingscodes bekijken - \emph{https://kriket.referralcandy.com/MWGS976/rewards} (zie figuur \ref{fig:referral-account.png}). Men kan hier ook zijn of haar persoonlijke link aanpassen (bijvoorbeeld \emph{https://kriket.refr.cc/evertv})
 
 \begin{figure}[h!]
-	\includegraphics[width=\linewidth]{img/referral-account.png}
+	\includegraphics[width=80mm,scale=0.9]{img/referral-account.png}
+	\centering
 	\caption{Het overzicht van de kortingscodes van een gebruiker.}
 	\label{fig:referral-account.png}
 \end{figure}
@@ -170,6 +177,7 @@ De data uit Google Analytics, Shopify en Referral Candy capteerde van 26 juli to
 		\subitem FR: 7,25\%
 		\subitem ES: 1,81\%
 \end{itemize}
+\clearpage
 \textbf{Shopify}
 \begin{itemize}
 	\item Sessies: 102 (93 bezoekers)
@@ -188,31 +196,18 @@ De data uit Google Analytics, Shopify en Referral Candy capteerde van 26 juli to
 \begin{itemize}
 	\item E-mails verstuurd: 48 
 		\subitem Uitnodiging e-mails: 35
-		\subitem Reminder e-mails: 13 
+		\subitem Herinnering e-mails: 13 
 	\item Link clicks: 25
 	\item Social media shares: 13
 	\item Webshop bezoeken: 16
-	\item Aankopen via referral: 5
-	\item Referral omzet: EUR 90,00 (zie figuur \ref{fig:directe-referral-verkoop})
+	\item Aankopen via referral: 5 (zie figuur \ref{fig:directe-referral-verkoop})
+	\item Referral omzet: EUR 90,00
 \end{itemize}
 
-\begin{figure}
-	\includegraphics[]{img/acquisitie-kanalen.png}
-	\centering
-	\caption{De acquisitie kanalen tussen 26 juli en 20 augustus.}
-	\label{fig:acquisitie-kanalen}
-\end{figure}
-
+Ook niet onbelangrijk - de aparte aankondigings-e-mail van Kriket naar hun klanten werd door \textbf{de helft} van de ontvangers gelezen.
 
 \begin{figure}
-	\includegraphics[scale=0.9]{img/directe-referral-verkoop.png}
-	\centering
-	\caption{Directe (18 orders) en referral (5 orders) verkoop in een cirkeldiagram.}
-	\label{fig:directe-referral-verkoop}
-\end{figure}
-
-\begin{figure}
-	\includegraphics[scale=0.9]{img/conversie-ratio-trechter.png}
+	\includegraphics[]{img/conversie-ratio-trechter.png}
 	\centering
 	\caption{Conversie ratio is 19,61\%, dat wil zeggen dat bijna 1 op 5 sessies eindigt in een aankoop.}
 	\label{fig:conversie-ratio-trechter}
@@ -220,14 +215,25 @@ De data uit Google Analytics, Shopify en Referral Candy capteerde van 26 juli to
 
 De verkoop data werd enkel uit Shopify gehaald en niet uit Google Analytics. Dit werd gedaan omdat Shopify de data direct bij de bron verkrijgt, Google Analytics kan minder accuraat zijn doordat het in deze situatie werkt met pagina bezoeken. Zo zal Google Analytics kijken naar \emph{/checkout/thank\_you} om te besluiten of er een betaling is gebeurd en Shopify krijgt deze data met 100\% zekerheid binnen omdat deze de betalingen opvolgt. In de tijdsspanne van 26 juli tot 20 augustus heeft Google Analytics 18 voltooide orders getracked en Shopify 23. Vandaar wordt voor deze data Shopify gebruikt.
 
-Het grote verschil in aantal sessies bij Google Analytics en Shopify komt doordat Google Analytics alle sessies van bots mee rekent. Dit kan uitgezet worden bij de instellingen door ``Alle hits van bekende bots en spiders uitsluiten`` aan te vinken. Tijdens deze tests werd dit niet uitgezet en daardoor is er een groot verschil. Men kijkt om deze reden voor de beste referentie vooral naar 
-de percentages en de exacte data uit Shopify.
+Het grote verschil in aantal sessies bij Google Analytics en Shopify komt doordat Google Analytics alle sessies van bots mee rekent. Dit kan uitgezet worden bij de instellingen door ``Alle hits van bekende bots en spiders uitsluiten`` aan te vinken. Tijdens deze tests werd dit niet uitgezet en waarschijnlijk is er daardoor een groot verschil. Men kijkt om deze reden voor de beste referentie vooral naar de percentages en de exacte data uit Shopify.
 
 \begin{figure}
 	\includegraphics[scale=0.7]{img/sessies-per-apparaat.png}
 	\centering
 	\caption{Verdeling van aantal sessies op gebruikte apparaten. Men ziet een opvallend groot aantal mobiele gebruikers (43.5\%).}
 	\label{fig:sessies-per-apparaat}
+\end{figure}
+\begin{figure}
+\includegraphics[scale=0.9]{img/directe-referral-verkoop.png}
+\centering
+\caption{Directe (18 orders) en referral (5 orders) verkoop in een cirkeldiagram.}
+\label{fig:directe-referral-verkoop}
+\end{figure}
+\begin{figure}
+	\includegraphics[]{img/acquisitie-kanalen.png}
+	\centering
+	\caption{De acquisitie kanalen tussen 26 juli en 20 augustus.}
+	\label{fig:acquisitie-kanalen}
 \end{figure}
 
 Deze data kan men vergelijken met eenzelfde periode, voordat de growth hack in actie werd gezet. Van 1 tot 25 juli, de vergelijking gebeurt best met verkoopcijfers om een duidelijke evolutie te zien voor en tijdens implementatie van  de growth hack. Enkele belangrijke cijfers vindt men in de tabel hieronder.
@@ -248,18 +254,24 @@ Deze data kan men vergelijken met eenzelfde periode, voordat de growth hack in a
 	\hline
 \end{tabular}
 
+Met een gebrek aan toegang tot een databank of .csv-bestand met alle order en bijhorende informatie is het bij bovenstaande gemiddelde niet mogelijk om een standaardafwijking toe te voegen. Deze waarden komen rechtstreeks uit de dashboards van de gebruikte toepassingen.
+
 \subsection{Conclusie: growth hack succesvol?} \label{sec:conclusie-growth-hack-succesvol}
 We kunnen uit de laatste tabel hierboven afleiden dat de growth hack vooral voor meer orders heeft gezorgd. Na verder onderzoek zien we een gemiddelde van \textbf{13 à 17 orders per maand} voor de afgelopen maanden. De orders van het referral programma zijn dus bijkomende orders, waardoor het hoogste aantal ooit werd behaald (binnen 26 dagen tijd), \textbf{23 orders}.
 
 Verder is het aantal sessies enorm gestegen, dit is waarschijnlijk mede door de advertenties via Facebook Ads (de sociale media platformen Facebook en Instagram). 
 
-Was de growth hack succesvol? Op het eerste zicht is er niet gigantisch veel veranderd tijdens deze maand, maar het aantal nieuwe bezoekers en nieuwe klanten zorgt waarschijnlijk voor stabiele groei de volgende maanden. 
+Was de growth hack succesvol? Op het eerste zicht is er niet gigantisch veel veranderd tijdens deze maand, maar het aantal nieuwe bezoekers en nieuwe klanten zorgt waarschijnlijk voor een stabiele groei de volgende maanden. 
 
-De klanten van Kriket zijn mogelijks na 1 maand nog niet genoeg vertrouwd met het referral programma, waardoor ze het nog niet willen gebruiken. Een langere periode zal er voor zorgen dat ze vertrouwd zijn met het systeem. Wanneer ze de nood aan nieuwe krekelrepen voelen, zullen ze denken aan de mogelijkheid om 20\% korting te verkrijgen via dit systeem. Dit heeft waarschijnlijk meer tijd nodig dan een kleine maand. Verder kan het helpen om enkele influencers, zoals de huidige Kriket Ambassadors \href{https://www.instagram.com/alinefobe}{@alinefobe}, \href{https://www.instagram.com/tiph_duquesne}{@tiph\_duquesne} of \href{https://www.instagram.com/eefdeboeck}{@eefdeboeck}, door een post of Instagramstory\footnote{audiovisuele kortverhalen die 24 uur beschikbaar blijven op de socialenetwerksite} volgers warm te maken voor het referral programma. 
+De klanten van Kriket zijn mogelijks na 1 maand nog niet genoeg vertrouwd met het referral programma, waardoor ze het nog niet willen gebruiken. Een langere periode zal er voor zorgen dat ze vertrouwd zijn met het systeem. Wanneer ze de nood aan nieuwe krekelrepen voelen, zullen ze denken aan de mogelijkheid om 20\% korting te verkrijgen via dit systeem. Dit heeft waarschijnlijk meer tijd nodig dan een kleine maand. Het is een verhaal dat van enkele klanten ook terug kwam - ze wouden de link doorsturen en kortingscode gebruiken, maar hun kennissen hadden er nog geen nodig of net een order geplaatst. 
 
-Men ziet op 26 dagen tijd jammer genoeg niet dat Kriket de wereld overneemt met hun krekelrepen. Ondanks dit kan men wel besluiten dat het een succesvolle implementatie was een growth hack op een niet technologische start-up in Brussel.
+Door seizoensgebondenheid en de vakantieperiode wordt er sowieso minder verkocht, vermeld Michiel (medeoprichter van Kriket). Dus dat heeft ook invloed op de cijfers die men tijdens deze periode te zien krijgt.
 
-Zoals eerder vermeld heeft bijna ieder bedrijf wel een digitale kant in z'n onderneming, via deze weg kan men verschillende growth hacks uitproberen en toepassen.
+Verder kan het helpen om enkele influencers, zoals de huidige Kriket Ambassadors \href{https://www.instagram.com/alinefobe}{@alinefobe}, \href{https://www.instagram.com/tiph_duquesne}{@tiph\_duquesne} of \href{https://www.instagram.com/eefdeboeck}{@eefdeboeck}, door een post of Instagramstory\footnote{audiovisuele kortverhalen die 24 uur beschikbaar blijven op de socialenetwerksite} volgers warm te maken voor het referral programma. 
+
+Men ziet op 26 dagen tijd jammer genoeg niet dat Kriket de wereld overneemt met hun krekelrepen. Ondanks dit kan men wel besluiten dat het een succesvolle implementatie was een growth hack op een niet technologische start-up in Brussel. Meer orders, meer bezoekers en (potentiële) klanten hebben Kriket weer eens zien passeren, wat hen mogelijks aanzet om eens krekelrepen te kopen.
+
+Zoals eerder vermeld heeft bijna ieder bedrijf wel een digitale kant in z'n onderneming, via deze weg kan men verschillende growth hacks uitproberen.
 
 
 
